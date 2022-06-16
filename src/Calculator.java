@@ -28,59 +28,59 @@ public class Calculator {
 
 
         switch (o) {
-            case '+' -> {
+            case '+' : {
                 System.out.println("Introduceti al doilea numar: ");
                 b = input.nextDouble();
                 r = a + b;
                 System.out.println(a + " + " + b + " = " + r);
             }
-            case '-' -> {
+            case '-' : {
                 System.out.println("Introduceti al doilea numar: ");
                 b = input.nextDouble();
                 r = a - b;
                 System.out.println(a + " - " + b + " = " + r);
             }
-            case '*' -> {
+            case '*' : {
                 System.out.println("Introduceti al doilea numar: ");
                 b = input.nextDouble();
                 r = a * b;
                 System.out.println(a + " * " + b + " = " + r);
             }
-            case '/' -> {
+            case '/' : {
                 System.out.println("Introduceti al doilea numar: ");
                 b = input.nextDouble();
                 r = a / b;
                 System.out.println(a + " : " + b + " = " + r);
             }
-            case 'r' -> {
+            case 'r' : {
                 r = Math.sqrt(a);
                 System.out.println(" radical din " + a + " = " + r);
             }
-            case 'm' -> {
+            case 'm' : {
                 r = Math.abs(a);
                 System.out.println(" Modulul numarului " + a + " = " + r);
             }
-            case 's' -> {
+            case 's' : {
                 r = Math.sin(a);
                 System.out.println(" sinusul numarului " + a + " = " + r);
             }
-            case 'c' -> {
+            case 'c' : {
                 r = Math.cos(a);
                 System.out.println(" cosinusului numarului " + a + " = " + r);
             }
-            case 't' -> {
+            case 't' : {
                 r = Math.tan(a);
                 System.out.println(" tangenta numarului " + a + " = " + r);
             }
-            case 'l' -> {
+            case 'l' : {
                 r = Math.log(a);
                 System.out.println(" logaritm natural numarului " + a + " = " + r);
             }
-            case 'f' -> {
+            case 'f' : {
                 r = Factorial.factorial(a);
                 System.out.println(" factorialul numarului " + a + " = " + r);
             }
-            default -> System.out.println("Operator nevalid");
+            default : System.out.println("Operator nevalid");
         }
     input.close();
 
